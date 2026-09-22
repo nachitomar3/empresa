@@ -1,0 +1,624 @@
+<!--
+=====================================================================
+  IJMT VENTURES LLC · PÁGINA DE EMPRESA · Aroma Queen
+  Publicar en: ijmtventures.com (GitHub Pages)
+  Última actualización de los datos: septiembre de 2026
+
+  Si cambiás alguno de estos datos, cambialos TAMBIÉN en Stripe y en
+  la landing. Tienen que decir lo mismo en los tres lados:
+  razón social · domicilio · email de soporte · teléfono · descriptor
+  precio · días de garantía · sitio web
+
+  Descriptor configurado: AROMA QUEEN  (idéntico en Stripe)
+  Garantía publicada: 30 días sin preguntas — es una promesa pública.
+
+  Plantilla original de Santiago Bilbao · santiagobilbao.com
+=====================================================================
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IJMT VENTURES LLC — Venta de productos digitales</title>
+<meta name="description" content="IJMT VENTURES LLC (Miami, FL 33182, Estados Unidos) vende productos digitales descargables de pago único. Precios, entrega, garantía de 30 días, reembolsos y atención al cliente.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ===== Estilos aislados bajo .tpl — no afectan al tema de WordPress ni al resto del sitio ===== */
+.tpl{
+  --tpl-bg:#0c0c0d; --tpl-card:#17171a; --tpl-card2:#1d1d21; --tpl-line:#2a2a30;
+  --tpl-txt:#f2f2f4; --tpl-mut:#a4a4ad; --tpl-body:#d6d6dc;
+  --tpl-acc:#ff4800; --tpl-acc2:#ff6a00; --tpl-ok:#3ddc84;
+  background:var(--tpl-bg); color:var(--tpl-txt);
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.65; font-size:16px; -webkit-font-smoothing:antialiased;
+}
+.tpl *{box-sizing:border-box;margin:0;padding:0}
+.tpl a{color:var(--tpl-acc2);text-decoration:none}
+.tpl a:hover{text-decoration:underline}
+.tpl p{margin:0 0 14px;color:var(--tpl-body)}
+.tpl ul,.tpl ol{margin:0 0 16px 20px;color:var(--tpl-body)}
+.tpl li{margin-bottom:7px}
+.tpl strong{color:var(--tpl-txt);font-weight:700}
+.tpl em{font-style:italic}
+.tpl-wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+
+/* NAV */
+.tpl-nav{position:sticky;top:0;z-index:60;background:rgba(12,12,13,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--tpl-line)}
+.tpl-nav-in{max-width:1080px;margin:0 auto;padding:13px 22px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.tpl-brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.02em;color:var(--tpl-txt);font-size:15px}
+.tpl-brand:hover{text-decoration:none}
+.tpl-logo{width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,var(--tpl-acc),var(--tpl-acc2));display:grid;place-items:center;font-size:13px;font-weight:800;color:#fff}
+.tpl-links{display:flex;gap:15px;margin-left:auto;flex-wrap:wrap;font-size:13.5px;align-items:center}
+.tpl-links a{color:var(--tpl-mut);font-weight:500}
+.tpl-links a:hover{color:var(--tpl-txt);text-decoration:none}
+.tpl-navcta{background:linear-gradient(135deg,var(--tpl-acc),var(--tpl-acc2));color:#fff!important;font-weight:700;padding:8px 14px;border-radius:8px}
+.tpl-navcta:hover{filter:brightness(1.1);text-decoration:none}
+
+/* HERO */
+.tpl-hero{padding:64px 0 52px;border-bottom:1px solid var(--tpl-line);background:radial-gradient(900px 420px at 50% -12%,rgba(255,72,0,.16),transparent 70%)}
+.tpl-pill{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--tpl-acc2);border:1px solid rgba(255,106,0,.38);background:rgba(255,72,0,.08);padding:6px 13px;border-radius:999px;margin-bottom:20px}
+.tpl h1{font-size:clamp(29px,5vw,49px);line-height:1.13;letter-spacing:-.03em;font-weight:800;margin:0 0 18px;color:var(--tpl-txt)}
+.tpl-lead{font-size:clamp(16px,2.1vw,19px);color:var(--tpl-mut);max-width:790px;margin-bottom:26px}
+.tpl-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:34px}
+.tpl-btn{display:inline-block;background:linear-gradient(135deg,var(--tpl-acc),var(--tpl-acc2));color:#fff!important;font-weight:700;font-size:15px;padding:13px 22px;border-radius:10px;text-align:center;border:none}
+.tpl-btn:hover{text-decoration:none;filter:brightness(1.1)}
+.tpl-btn.tpl-ghost{background:transparent;border:1px solid var(--tpl-line);color:var(--tpl-txt)!important}
+.tpl-btn.tpl-ghost:hover{border-color:var(--tpl-acc);filter:none}
+.tpl-btn.tpl-sm{font-size:14px;padding:10px 17px;margin-top:14px}
+.tpl-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:14px}
+.tpl-fact{background:var(--tpl-card);border:1px solid var(--tpl-line);border-radius:12px;padding:15px 17px}
+.tpl-fact b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--tpl-mut);font-weight:700;margin-bottom:4px}
+.tpl-fact span{font-size:14.5px;font-weight:600;color:var(--tpl-txt)}
+
+/* SECCIONES */
+.tpl-sec{padding:60px 0;border-bottom:1px solid var(--tpl-line)}
+.tpl h2{font-size:clamp(23px,3.3vw,33px);letter-spacing:-.025em;font-weight:800;margin:0 0 10px;color:var(--tpl-txt);line-height:1.2}
+.tpl h2 .tpl-num{color:var(--tpl-acc);font-size:.5em;vertical-align:super;margin-right:9px;font-weight:800}
+.tpl h3{font-size:19px;font-weight:700;letter-spacing:-.01em;margin:26px 0 8px;color:var(--tpl-txt)}
+.tpl h4{font-size:15.5px;font-weight:700;margin:18px 0 6px;color:var(--tpl-txt)}
+.tpl-sub{color:var(--tpl-mut);max-width:820px;margin-bottom:30px}
+
+/* CARDS */
+.tpl-grid{display:grid;gap:20px}
+.tpl-g3{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.tpl-g2{grid-template-columns:repeat(auto-fit,minmax(330px,1fr))}
+.tpl-card{background:var(--tpl-card);border:1px solid var(--tpl-line);border-radius:16px;padding:26px;display:flex;flex-direction:column}
+.tpl-card.tpl-hl{border-color:rgba(255,72,0,.45);box-shadow:0 0 0 1px rgba(255,72,0,.1),0 18px 40px -24px rgba(255,72,0,.55)}
+.tpl-card h3{margin-top:0}
+.tpl-tag{font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--tpl-acc2);margin-bottom:8px}
+.tpl-what{color:var(--tpl-mut);font-size:14.5px;margin-bottom:14px}
+.tpl-card ul{font-size:14.5px;margin-left:18px}
+.tpl-foot{margin-top:auto;padding-top:16px;border-top:1px solid var(--tpl-line);font-size:13.5px;color:var(--tpl-mut)}
+
+/* TABLAS */
+.tpl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tpl-tbl{width:100%;border-collapse:collapse;margin:12px 0 16px;font-size:14.5px}
+.tpl-tbl th{text-align:left;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--tpl-mut);font-weight:700;padding:8px 12px 8px 0;border-bottom:1px solid var(--tpl-line);white-space:nowrap}
+.tpl-tbl td{padding:9px 12px 9px 0;border-bottom:1px solid var(--tpl-line);color:var(--tpl-body);vertical-align:top}
+.tpl-tbl td:first-child{font-weight:600;color:var(--tpl-txt);white-space:nowrap}
+.tpl-amt{color:var(--tpl-txt)!important;font-weight:700;white-space:nowrap}
+.tpl-price{font-size:29px;font-weight:800;letter-spacing:-.02em;margin:10px 0 2px;color:var(--tpl-txt)}
+.tpl-was{font-size:14px;color:var(--tpl-mut);text-decoration:line-through;margin-left:8px;font-weight:500}
+
+/* DATOS EMPRESA */
+.tpl-idbox{background:linear-gradient(180deg,var(--tpl-card2),var(--tpl-card));border:1px solid var(--tpl-line);border-radius:16px;padding:8px 26px 20px}
+.tpl-idbox .tpl-tbl td:first-child{width:34%;color:var(--tpl-mut);font-weight:600}
+.tpl-idbox .tpl-tbl td:last-child{color:var(--tpl-txt);font-weight:600}
+
+/* NOTA */
+.tpl-note{background:rgba(255,72,0,.06);border:1px solid rgba(255,72,0,.28);border-left:3px solid var(--tpl-acc);border-radius:10px;padding:16px 18px;margin:22px 0;font-size:14.5px;color:#e2e2e8}
+.tpl-note b{color:var(--tpl-txt)}
+.tpl-ok{background:rgba(61,220,132,.06);border:1px solid rgba(61,220,132,.28);border-left:3px solid var(--tpl-ok);border-radius:10px;padding:16px 18px;margin:22px 0;font-size:14.5px;color:#e2e2e8}
+
+/* SOPORTE */
+.tpl-supbox{background:linear-gradient(135deg,rgba(255,72,0,.12),rgba(255,106,0,.04));border:1px solid rgba(255,106,0,.35);border-radius:18px;padding:34px 28px;text-align:center;margin-bottom:28px}
+.tpl-supbox h3{margin-top:0;font-size:24px}
+.tpl-supbox p{max-width:620px;margin:0 auto 20px}
+.tpl-val{font-size:17px;font-weight:700;word-break:break-word;margin:6px 0;color:var(--tpl-txt)}
+
+/* PERSONA */
+.tpl-person{display:flex;gap:22px;align-items:flex-start;flex-wrap:wrap}
+.tpl-avatar{width:82px;height:82px;border-radius:50%;background:linear-gradient(135deg,var(--tpl-acc),var(--tpl-acc2));display:grid;place-items:center;font-size:28px;font-weight:800;color:#fff;flex-shrink:0}
+.tpl-person .tpl-pbody{flex:1;min-width:260px}
+
+/* FLOTANTE */
+.tpl-float{position:fixed;right:18px;bottom:18px;z-index:70;display:flex;flex-direction:column;gap:10px;align-items:flex-end}
+.tpl-fbtn{display:flex;align-items:center;gap:9px;background:linear-gradient(135deg,var(--tpl-acc),var(--tpl-acc2));color:#fff!important;font-weight:700;font-size:14px;padding:12px 18px;border-radius:999px;box-shadow:0 10px 30px -8px rgba(0,0,0,.7)}
+.tpl-fbtn:hover{text-decoration:none;filter:brightness(1.1)}
+.tpl-fbtn.tpl-wa{background:#25D366}
+
+/* LEGAL */
+.tpl-legal h3{font-size:17px;margin-top:26px}
+.tpl-legal p,.tpl-legal li{font-size:14.8px}
+
+/* FOOTER */
+.tpl-footer{padding:44px 0 90px;color:var(--tpl-mut);font-size:14px}
+.tpl-fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:26px;margin-bottom:28px}
+.tpl-footer b{display:block;color:var(--tpl-txt);font-size:12px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:9px}
+.tpl-footer a{color:var(--tpl-mut)}
+.tpl-copy{border-top:1px solid var(--tpl-line);padding-top:22px;font-size:13px;line-height:1.8}
+@media(max-width:640px){
+  .tpl-links{gap:11px;font-size:12.5px}
+  .tpl-sec{padding:46px 0}
+  .tpl-card{padding:22px}
+  .tpl-fbtn span{display:none}
+  .tpl-fbtn{padding:14px;border-radius:50%}
+}
+</style>
+</head>
+<body>
+
+<div class="tpl" id="tpl-top">
+
+<!-- ══════════════════ NAV ══════════════════ -->
+<div class="tpl-nav">
+  <div class="tpl-nav-in">
+    <a class="tpl-brand" href="#tpl-top"><span class="tpl-logo">AQ</span> IJMT VENTURES LLC</a>
+    <div class="tpl-links">
+      <a href="#tpl-empresa">Empresa</a>
+      <a href="#tpl-negocio">Qué vendemos</a>
+      <a href="#tpl-productos">Productos</a>
+      <a href="#tpl-entrega">Entrega</a>
+      <a href="#tpl-reembolsos">Reembolsos</a>
+      <a href="#tpl-terminos">Términos</a>
+      <a class="tpl-navcta" href="#tpl-soporte">Contactar soporte</a>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ HERO ══════════════════ -->
+<div class="tpl-hero">
+  <div class="tpl-wrap">
+    <span class="tpl-pill">IJMT VENTURES LLC · Miami, FL 33182, Estados Unidos</span>
+    <h1>Productos digitales descargables de acceso inmediato.</h1>
+    <p class="tpl-lead"><strong>IJMT VENTURES LLC</strong> es una empresa dedicada exclusivamente a la <strong>venta de productos digitales</strong>, fundada y dirigida por <strong>Ignacio Martínez Tejera</strong>. Comercializamos cursos, manuales, guías y plantillas en formato digital sobre fabricación casera de aromas, velas y jabones artesanales, con <strong>pago único</strong> y entrega inmediata por email. <strong>No vendemos ni enviamos productos físicos</strong> y <strong>no operamos suscripciones ni cobros recurrentes</strong>.</p>
+    <div class="tpl-ctas">
+      <a class="tpl-btn" href="#tpl-soporte">Contactar con atención al cliente</a>
+      <a class="tpl-btn tpl-ghost" href="#tpl-reembolsos">Ver política de reembolsos</a>
+    </div>
+    <div class="tpl-facts">
+      <div class="tpl-fact"><b>Razón social</b><span>IJMT VENTURES LLC</span></div>
+      <div class="tpl-fact"><b>Soporte</b><span>nachitoomartinez7soporte@gmail.com</span></div>
+      <div class="tpl-fact"><b>Garantía</b><span>30 días en todos los productos</span></div>
+      <div class="tpl-fact"><b>Entrega</b><span>Digital e inmediata</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ 01 · DATOS DE LA EMPRESA ══════════════════ -->
+<div class="tpl-sec" id="tpl-empresa">
+  <div class="tpl-wrap">
+    <h2><span class="tpl-num">01</span>Datos de la empresa</h2>
+    <p class="tpl-sub">Estos son los datos identificatorios completos del vendedor. Son exactamente los mismos que figuran en nuestra cuenta de pagos, en nuestros sitios de venta y en los recibos que reciben nuestros clientes.</p>
+
+    <div class="tpl-grid tpl-g2">
+      <div class="tpl-idbox">
+        <div class="tpl-scroll">
+        <table class="tpl-tbl">
+          <tr><td>Razón social</td><td>IJMT VENTURES LLC</td></tr>
+          <tr><td>Nombre comercial</td><td>Aroma Queen</td></tr>
+          <tr><td>Tipo de entidad</td><td>Limited Liability Company (LLC), Wyoming, Estados Unidos</td></tr>
+          <tr><td>Domicilio comercial</td><td>1057 NW 136th Ave<br>Miami, FL 33182<br>Estados Unidos</td></tr>
+          <tr><td>Representante legal</td><td>Ignacio Martínez Tejera — Fundador y Director</td></tr>
+          <tr><td>Sitio web oficial</td><td><a href="https://ijmtventures.com" target="_blank" rel="noopener">ijmtventures.com</a></td></tr>
+        </table>
+        </div>
+      </div>
+
+      <div class="tpl-idbox">
+        <div class="tpl-scroll">
+        <table class="tpl-tbl">
+          <tr><td>Email de soporte</td><td><a href="mailto:nachitoomartinez7soporte@gmail.com">nachitoomartinez7soporte@gmail.com</a></td></tr>
+          <tr><td>Teléfono de soporte</td><td><a href="tel:+59894823581">+598 94 823 581</a></td></tr>
+          <tr><td>WhatsApp de soporte</td><td><a href="https://api.whatsapp.com/send/?phone=59894823581" target="_blank" rel="noopener">+598 94 823 581</a></td></tr>
+          <tr><td>Horario de atención</td><td>Lunes a viernes, de 9:00 a 18:00 (GMT-3)</td></tr>
+          <tr><td>Cargo en el extracto bancario</td><td>AROMA QUEEN</td></tr>
+          <tr><td>Monedas de cobro</td><td>USD (dólar estadounidense)</td></tr>
+        </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="tpl-ok">
+      <b>¿Ves un cargo que no reconocés en tu tarjeta?</b> Aparecerá como <strong>AROMA QUEEN</strong>. Antes de abrir una disputa con tu banco, escribinos a <a href="mailto:nachitoomartinez7soporte@gmail.com">nachitoomartinez7soporte@gmail.com</a> o por <a href="https://api.whatsapp.com/send/?phone=59894823581" target="_blank" rel="noopener">WhatsApp</a>: identificamos la operación en el momento y, si corresponde, te devolvemos el importe directamente. Es mucho más rápido que un contracargo.
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ 02 · QUIÉN ESTÁ DETRÁS ══════════════════ -->
+<div class="tpl-sec" id="tpl-quien">
+  <div class="tpl-wrap">
+    <h2><span class="tpl-num">02</span>Quién está detrás del negocio</h2>
+    <p class="tpl-sub">Detrás de IJMT VENTURES LLC hay una persona real, identificable y accesible. No trabajamos con marcas anónimas ni intermediarios.</p>
+
+    <div class="tpl-card">
+      <div class="tpl-person">
+        <div class="tpl-avatar">AQ</div>
+        <div class="tpl-pbody">
+          <h3 style="margin-top:0">Ignacio Martínez Tejera</h3>
+          <div class="tpl-tag">Fundador, Director y Representante de la cuenta</div>
+          <p>Ignacio Martínez Tejera es el fundador y único responsable de <strong>IJMT VENTURES LLC</strong>. Se dedica a la creación y venta de productos digitales en internet sobre fabricación casera de aromas, velas y jabones artesanales: desarrollo del material, publicación en la tienda online propia y atención directa a los clientes.</p>
+          <p>Supervisa personalmente la creación y la actualización de todos los productos digitales que comercializamos, y es también quien responde personalmente el soporte a clientes.</p>
+          <p style="margin-bottom:0"><strong>Contacto directo:</strong> <a href="mailto:nachitoomartinez7soporte@gmail.com">nachitoomartinez7soporte@gmail.com</a> · <a href="https://api.whatsapp.com/send/?phone=59894823581" target="_blank" rel="noopener">WhatsApp +598 94 823 581</a> · <a href="tel:+59894823581">+598 94 823 581</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ 03 · MODELO DE NEGOCIO ══════════════════ -->
+<div class="tpl-sec" id="tpl-negocio">
+  <div class="tpl-wrap">
+    <h2><span class="tpl-num">03</span>Qué vende IJMT VENTURES LLC</h2>
+    <p class="tpl-sub">Toda la actividad de la empresa es una sola: la venta de productos digitales de pago único. Cada cobro que procesamos corresponde a uno de los productos descriptos en esta página.</p>
+
+    <div class="tpl-grid tpl-g2">
+      <div class="tpl-card">
+        <div class="tpl-tag">Única línea de producto</div>
+        <h3>Productos digitales descargables</h3>
+        <p class="tpl-what">Cursos, manuales, guías, bibliotecas de recursos y plantillas editables en formato digital (PDF, video y enlaces a plataformas de edición online) sobre manualidades y oficios que se hacen desde casa. Actualmente el catálogo está centrado en la fabricación casera de aromas, velas y jabones artesanales. Se venden en nuestra tienda online propia y se entregan por email inmediatamente después del pago.</p>
+        <ul>
+          <li>Precio actual: <strong>US$ 14</strong> (pago único)</li>
+          <li>Pago único, acceso de por vida</li>
+          <li>Sin suscripción ni cargos recurrentes</li>
+          <li>Catálogo en rotación permanente</li>
+          <li>Garantía de 30 días</li>
+        </ul>
+        <div class="tpl-foot">Detalle completo en <a href="#tpl-productos">Productos digitales</a>.</div>
+      </div>
+
+      <div class="tpl-card">
+        <div class="tpl-tag">Cómo cobramos</div>
+        <h3>Modelo de cobro</h3>
+        <p class="tpl-what">Todos los cobros son <strong>pagos únicos</strong> autorizados por el cliente antes de la compra. <strong>No operamos suscripciones, membresías de renovación automática ni pruebas gratuitas que se conviertan en cargos.</strong> Nunca realizamos un cobro que el cliente no haya autorizado expresamente.</p>
+        <ul>
+          <li>Monedas: <strong>USD (dólar estadounidense)</strong></li>
+          <li>Clientes: consumidores finales y microemprendedores</li>
+          <li>Mercados: Uruguay, México, Colombia, Chile, Perú, España y Estados Unidos</li>
+          <li>Canal de venta: exclusivamente nuestras páginas web propias</li>
+          <li>Extracto bancario: <strong>AROMA QUEEN</strong></li>
+        </ul>
+        <div class="tpl-foot">Datos completos del vendedor en <a href="#tpl-empresa">Datos de la empresa</a>.</div>
+      </div>
+
+      <div class="tpl-card">
+        <div class="tpl-tag">Qué NO hacemos</div>
+        <h3>Fuera de nuestra actividad</h3>
+        <p class="tpl-what">Para evitar cualquier ambigüedad sobre la naturaleza del negocio, dejamos constancia expresa de todo lo que <strong>no</strong> forma parte de nuestra operación.</p>
+        <ul>
+          <li>No vendemos, fabricamos ni enviamos <strong>productos físicos</strong>.</li>
+          <li>No cobramos <strong>suscripciones</strong> ni renovaciones automáticas.</li>
+          <li>No ofrecemos <strong>pruebas gratuitas</strong> que se conviertan en un cargo.</li>
+          <li>No vendemos a través de <strong>terceros</strong> ni de marketplaces.</li>
+          <li>No prestamos servicios de asesoramiento financiero, legal, contable ni médico.</li>
+        </ul>
+        <div class="tpl-foot">Condiciones completas en <a href="#tpl-terminos">Términos y Condiciones</a>.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ 04 · PRODUCTOS DIGITALES ══════════════════ -->
+<!-- Duplicá el bloque <div class="tpl-card"> … </div> tantas veces como productos tengas. -->
+<div class="tpl-sec" id="tpl-productos">
+  <div class="tpl-wrap">
+    <h2><span class="tpl-num">04</span>Productos digitales — descripción y precios</h2>
+    <p class="tpl-sub">Productos digitales de pago único y acceso inmediato. Se vende en nuestra tienda online, operada por IJMT VENTURES LLC. Los precios promocionales tienen vigencia limitada; el importe final siempre se muestra al cliente antes de confirmar el pago.</p>
+
+    <div class="tpl-grid tpl-g2">
+
+      <!-- ---- PRODUCTO 1 ---- -->
+      <div class="tpl-card">
+        <div class="tpl-tag">Ebook · PDF descargable</div>
+        <h3>Método Aroma Queen</h3>
+        <p class="tpl-what">Ebook en PDF que enseña a fabricar seis líneas de productos aromáticos caseros —home sprays, difusores de varillas, velas de soja, aromatizantes de auto, perfuminas textiles y jabones— con las fórmulas medidas en gramos y mililitros. Se entrega por email inmediatamente después de acreditado el pago.</p>
+        <ul>
+          <li>Las fórmulas de las 6 líneas, con sus proporciones exactas</li>
+          <li>Directorio de proveedores con contactos y mínimos de compra</li>
+          <li>9 bonos: etiquetas y packaging editables, guiones de venta, guía de fotos y 3 líneas extra</li>
+          <li>Acceso de por vida</li>
+        </ul>
+        <div class="tpl-price">US$ 14</div>
+        <div class="tpl-foot">Pago único · Entrega inmediata por email · Garantía de 30 días<br>
+        <a href="https://resetdiario.com" target="_blank" rel="noopener">resetdiario.com</a></div>
+      </div>
+
+    </div>
+
+    <div class="tpl-note">
+      <b>Catálogo completo.</b> Los productos listados arriba son nuestro catálogo destacado. IJMT VENTURES LLC publica periódicamente nuevos productos digitales del mismo tipo (cursos, manuales en PDF, bibliotecas de recursos y plantillas editables sobre manualidades y oficios que se hacen desde casa), siempre de pago único y dentro del mismo rango de precio bajo (menos de <strong>US$ 30</strong>) y bajo los dominios <a href="https://resetdiario.com" target="_blank" rel="noopener">resetdiario.com</a>. <strong>Todos ellos se rigen por las mismas condiciones publicadas en esta página:</strong> pago único, entrega digital inmediata por email, garantía de 30 días y el mismo canal de soporte. El catálogo actualizado está siempre disponible bajo pedido escribiendo a <a href="mailto:nachitoomartinez7soporte@gmail.com">nachitoomartinez7soporte@gmail.com</a>.
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ 05 · ENTREGA ══════════════════ -->
+<div class="tpl-sec" id="tpl-entrega">
+  <div class="tpl-wrap">
+    <h2><span class="tpl-num">05</span>Política de entrega y envíos</h2>
+    <p class="tpl-sub">IJMT VENTURES LLC comercializa exclusivamente productos digitales. <strong>No vendemos, fabricamos ni enviamos productos físicos</strong>, por lo que no existen costos de envío, plazos de transporte, aduanas ni devoluciones de mercadería física.</p>
+
+    <div class="tpl-grid tpl-g2">
+      <div class="tpl-card">
+        <h3 style="margin-top:0">Plazos de entrega</h3>
+        <ul>
+          <li><strong>Plazo de entrega:</strong> inmediato. En la mayoría de los casos el acceso llega en menos de 5 minutos tras la confirmación del pago.</li>
+          <li><strong>Medio de entrega:</strong> correo electrónico a la dirección indicada en la compra, con el enlace de descarga o los datos de acceso a la plataforma.</li>
+          <li><strong>Plazo máximo garantizado:</strong> si por un problema técnico el acceso no llegara, lo resolvemos dentro de las 24 horas hábiles siguientes al reclamo.</li>
+          <li><strong>Costo de envío:</strong> US$ 0. No aplica.</li>
+        </ul>
+        <div class="tpl-foot">¿No recibiste el acceso? Revisá la carpeta de spam y escribinos a <a href="mailto:nachitoomartinez7soporte@gmail.com">nachitoomartinez7soporte@gmail.com</a>.</div>
+      </div>
+
+      <div class="tpl-card">
+        <h3 style="margin-top:0">Formato de los materiales</h3>
+        <ul>
+          <li><strong>PDF descargable:</strong> manuales, guías y bibliotecas de recursos, descargables desde el enlace enviado por email.</li>
+          <li><strong>Video en plataforma online:</strong> acceso con usuario y contraseña, sin límite de reproducciones.</li>
+          <li><strong>Plantillas editables:</strong> se entregan como enlaces a la plataforma de edición correspondiente.</li>
+          <li><strong>Vigencia del acceso:</strong> de por vida, salvo que se indique expresamente lo contrario en la ficha del producto.</li>
+        </ul>
+        <div class="tpl-foot">Todo el material es 100 % digital. No se envía nada por correo postal.</div>
+      </div>
+
+      <div class="tpl-card">
+        <h3 style="margin-top:0">Requisitos técnicos</h3>
+        <ul>
+          <li>Conexión a internet y un dispositivo con navegador web.</li>
+          <li>Lector de PDF para los materiales descargables.</li>
+          <li>Una cuenta gratuita en la plataforma de edición, para los productos de plantillas editables.</li>
+          <li>Una dirección de email válida: es el canal por el que se entrega todo.</li>
+        </ul>
+        <div class="tpl-foot">No se requiere ningún software de pago adicional.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ 06 · REEMBOLSOS ══════════════════ -->
+<div class="tpl-sec" id="tpl-reembolsos">
+  <div class="tpl-wrap">
+    <h2><span class="tpl-num">06</span>Política de reembolsos, cancelaciones y devoluciones</h2>
+    <p class="tpl-sub">Esta es la política vigente de IJMT VENTURES LLC y se aplica a <strong>todas</strong> las compras realizadas en cualquiera de nuestros sitios, sin excepción.</p>
+
+    <div class="tpl-grid tpl-g2">
+      <div class="tpl-card tpl-hl">
+        <div class="tpl-tag">Garantía</div>
+        <h3 style="margin-top:0">Garantía de satisfacción de 30 días</h3>
+        <p><strong>Todos</strong> los productos digitales de IJMT VENTURES LLC cuentan con una <strong>garantía de satisfacción de 30 días corridos</strong> contados desde la fecha de compra.</p>
+        <p>Si dentro de ese plazo considerás que lo adquirido no es para vos, te devolvemos el <strong>100 % del importe abonado</strong>, sin necesidad de justificar el motivo y sin preguntas.</p>
+        <p style="margin-bottom:0">Pasado el plazo de 30 días no se realizan reembolsos, por tratarse de contenidos digitales de acceso inmediato y descarga permanente.</p>
+      </div>
+
+      <div class="tpl-card">
+        <div class="tpl-tag">Procedimiento</div>
+        <h3 style="margin-top:0">Cómo solicitar un reembolso</h3>
+        <ul>
+          <li><strong>1.</strong> Escribinos a <a href="mailto:nachitoomartinez7soporte@gmail.com">nachitoomartinez7soporte@gmail.com</a> o por <a href="https://api.whatsapp.com/send/?phone=59894823581" target="_blank" rel="noopener">WhatsApp</a> dentro de los 30 días de la compra.</li>
+          <li><strong>2.</strong> Indicá el <strong>email de compra</strong>, el <strong>nombre del producto</strong> y la <strong>fecha del pago</strong>. No pedimos ningún otro requisito, formulario ni justificación.</li>
+          <li><strong>3.</strong> Confirmamos la recepción de tu solicitud dentro de las <strong>24 horas hábiles</strong>.</li>
+          <li><strong>4.</strong> Procesamos el reembolso en un plazo máximo de <strong>5 días hábiles</strong>, al mismo medio de pago utilizado en la compra.</li>
+          <li><strong>5.</strong> El dinero puede tardar entre <strong>5 y 10 días hábiles</strong> adicionales en verse acreditado, según los plazos de tu banco o emisor de tarjeta.</li>
+        </ul>
+        <div class="tpl-foot">El reembolso implica la baja inmediata del acceso al producto.</div>
+        <a class="tpl-btn tpl-sm" href="mailto:nachitoomartinez7soporte@gmail.com?subject=Solicitud%20de%20reembolso">Solicitar un reembolso ahora</a>
+      </div>
+    </div>
+
+    <h3>Cancelaciones</h3>
+    <p>Ninguno de nuestros productos es una suscripción: <strong>no existen cobros recurrentes, membresías con renovación automática ni pruebas gratuitas que se conviertan en un cargo</strong>, por lo que no hay nada que el cliente deba cancelar para evitar cobros futuros. Cada compra es un pago único y aislado.</p>
+
+    <h3>Devoluciones de productos físicos</h3>
+    <p>No aplica. IJMT VENTURES LLC no comercializa productos físicos, por lo que no existen devoluciones de mercadería, logística inversa, gastos de reenvío ni costos asociados.</p>
+
+    <h3>Excepciones</h3>
+    <p>Podemos rechazar una solicitud de reembolso cuando se detecte un uso abusivo del sistema de garantías: por ejemplo, descarga masiva del material seguida de solicitud de devolución, compras repetidas del mismo producto con solicitud sistemática de reembolso, o redistribución del contenido a terceros. En esos casos lo comunicamos al cliente por escrito, con la explicación correspondiente y la evidencia en la que nos basamos.</p>
+  </div>
+</div>
+
+<!-- ══════════════════ 07 · SOPORTE ══════════════════ -->
+<div class="tpl-sec" id="tpl-soporte">
+  <div class="tpl-wrap">
+    <h2><span class="tpl-num">07</span>Atención al cliente</h2>
+    <p class="tpl-sub">Atendemos consultas de preventa, problemas de acceso, soporte técnico, facturación y solicitudes de reembolso. Respondemos todos los mensajes.</p>
+
+    <div class="tpl-supbox">
+      <h3>¿Necesitás ayuda? Escribinos.</h3>
+      <p>Nuestro canal principal de soporte es el correo electrónico. Respondemos dentro de las <strong>24 horas hábiles</strong>. Si preferís mensajería instantánea, también estamos en WhatsApp.</p>
+      <div class="tpl-ctas" style="justify-content:center;margin-bottom:0">
+        <a class="tpl-btn" href="mailto:nachitoomartinez7soporte@gmail.com?subject=Consulta%20de%20soporte">✉ Escribir a nachitoomartinez7soporte@gmail.com</a>
+        <a class="tpl-btn tpl-ghost" href="https://api.whatsapp.com/send/?phone=59894823581" target="_blank" rel="noopener">💬 Contactar por WhatsApp</a>
+        <a class="tpl-btn tpl-ghost" href="tel:+59894823581">📞 +598 94 823 581</a>
+      </div>
+    </div>
+
+    <div class="tpl-grid tpl-g2">
+      <div class="tpl-card">
+        <div class="tpl-tag">Email · Canal principal</div>
+        <div class="tpl-val"><a href="mailto:nachitoomartinez7soporte@gmail.com">nachitoomartinez7soporte@gmail.com</a></div>
+        <p class="tpl-what" style="margin-bottom:0">Para cualquier consulta, incluidas las solicitudes de reembolso y las dudas sobre un cargo. Respuesta dentro de las 24 horas hábiles.</p>
+      </div>
+
+      <div class="tpl-card">
+        <div class="tpl-tag">WhatsApp y teléfono</div>
+        <div class="tpl-val"><a href="https://api.whatsapp.com/send/?phone=59894823581" target="_blank" rel="noopener">+598 94 823 581</a></div>
+        <div class="tpl-val"><a href="tel:+59894823581">+598 94 823 581</a></div>
+        <p class="tpl-what" style="margin-bottom:0">Soporte por mensajería y teléfono para clientes y consultas de preventa.</p>
+      </div>
+
+      <div class="tpl-card">
+        <div class="tpl-tag">Horario y tiempos</div>
+        <div class="tpl-val">Lunes a viernes, de 9:00 a 18:00 (GMT-3)</div>
+        <p class="tpl-what" style="margin-bottom:0">Los mensajes recibidos fuera de horario se responden el siguiente día hábil. Tiempo medio de primera respuesta: menos de 24 horas hábiles.</p>
+      </div>
+
+      <div class="tpl-card">
+        <div class="tpl-tag">Domicilio comercial</div>
+        <div class="tpl-val">IJMT VENTURES LLC</div>
+        <p class="tpl-what" style="margin-bottom:0">1057 NW 136th Ave<br>Miami, FL 33182<br>Estados Unidos</p>
+      </div>
+
+      <div class="tpl-card">
+        <div class="tpl-tag">Cargo en tu tarjeta</div>
+        <div class="tpl-val">AROMA QUEEN</div>
+        <p class="tpl-what" style="margin-bottom:0">Así aparece nuestro cobro en tu resumen bancario o de tarjeta de crédito.</p>
+      </div>
+
+      <div class="tpl-card">
+        <div class="tpl-tag">Idiomas de atención</div>
+        <div class="tpl-val">Español</div>
+        <p class="tpl-what" style="margin-bottom:0">Atendemos consultas de clientes en Uruguay, México, Colombia, Chile, Perú, España y Estados Unidos.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ 08 · TÉRMINOS ══════════════════ -->
+<div class="tpl-sec tpl-legal" id="tpl-terminos">
+  <div class="tpl-wrap">
+    <h2><span class="tpl-num">08</span>Términos y Condiciones</h2>
+    <p class="tpl-sub">Última actualización: septiembre de 2026.</p>
+
+    <h3>1. Titular</h3>
+    <p>Este sitio, los sitios de venta enlazados en esta página y la comercialización de todos sus productos son operados por <strong>IJMT VENTURES LLC</strong>, Limited Liability Company (LLC), Wyoming, Estados Unidos, con domicilio comercial en <strong>1057 NW 136th Ave, Miami, FL 33182, Estados Unidos</strong>, representada por <strong>Ignacio Martínez Tejera</strong>, y con correo de contacto <a href="mailto:nachitoomartinez7soporte@gmail.com">nachitoomartinez7soporte@gmail.com</a> y teléfono <a href="tel:+59894823581">+598 94 823 581</a>.</p>
+
+    <h3>2. Aceptación</h3>
+    <p>Al realizar una compra en cualquiera de nuestros sitios aceptás los presentes Términos y Condiciones, junto con la Política de Reembolsos, la Política de Entrega y la Política de Privacidad publicadas en esta misma página, que forman parte integrante de este acuerdo. Te recomendamos leerlos antes de completar tu pedido.</p>
+
+    <h3>3. Productos ofrecidos</h3>
+    <p>IJMT VENTURES LLC comercializa un único tipo de prestación, íntegramente digital: <strong>productos digitales de acceso inmediato</strong> —cursos, manuales, guías, bibliotecas de recursos y plantillas editables— entregados en formato PDF, video o enlaces a plataformas de edición online. <strong>No se envían productos físicos y no se prestan servicios personalizados, de consultoría ni de asesoramiento individual.</strong></p>
+
+    <h3>4. Entrega</h3>
+    <p>Confirmado el pago, los productos digitales se entregan de forma inmediata por correo electrónico a la dirección indicada en la compra. Es responsabilidad del cliente proporcionar una dirección de email válida y revisar la carpeta de correo no deseado. Los detalles completos figuran en la sección <a href="#tpl-entrega">Política de entrega y envíos</a>.</p>
+
+    <h3>5. Precio y forma de pago</h3>
+    <p>Los precios publicados corresponden a <strong>pagos únicos</strong>. <strong>No comercializamos suscripciones ni servicios de renovación automática</strong>, y no se realiza ningún cobro que el cliente no haya autorizado expresamente. Los pagos se procesan a través de plataformas de pago seguras de terceros certificadas PCI-DSS; este sitio no almacena datos de tarjeta. Los precios promocionales tienen vigencia limitada y el importe final se muestra siempre antes de confirmar el pago. El cargo figura en el extracto bancario del cliente como <strong>AROMA QUEEN</strong>.</p>
+
+    <h3>6. Garantía y reembolsos</h3>
+    <p>Todos los productos cuentan con una <strong>garantía de satisfacción de 30 días</strong> desde la fecha de compra, con devolución del 100 % del importe abonado y sin necesidad de justificar el motivo. Se aplica en su totalidad la <a href="#tpl-reembolsos">Política de reembolsos, cancelaciones y devoluciones</a> publicada en esta página.</p>
+
+    <h3>7. Propiedad intelectual</h3>
+    <p>Todo el contenido comercializado —textos, videos, imágenes, plantillas y materiales descargables— es propiedad de IJMT VENTURES LLC o de sus licenciantes, y se cede al cliente mediante una licencia de uso <strong>personal, intransferible y no exclusiva</strong>. Queda prohibida su reventa, redistribución, copia, publicación o difusión total o parcial sin autorización previa y por escrito. El incumplimiento habilita la baja inmediata del acceso sin derecho a reembolso, sin perjuicio de las acciones legales que correspondan.</p>
+
+    <h3>8. Resultados y limitación de responsabilidad</h3>
+    <p>Los contenidos tienen fines informativos y formativos. Los resultados dependen del esfuerzo, la dedicación, la experiencia previa y las circunstancias particulares de cada cliente, y <strong>no constituyen una garantía de rendimiento, ingresos ni resultado económico específico</strong>. Nada de lo aquí ofrecido constituye asesoramiento financiero, legal, contable, médico ni de inversión. La responsabilidad de IJMT VENTURES LLC se limita, en todo caso, al importe efectivamente abonado por el cliente.</p>
+
+    <h3>9. Obligaciones del cliente</h3>
+    <ul>
+      <li>Proporcionar datos veraces y una dirección de email válida al momento de la compra.</li>
+      <li>Ser mayor de 18 años o contar con la autorización de su representante legal.</li>
+      <li>Utilizar el material adquirido conforme a la ley y a estos Términos.</li>
+      <li>No compartir sus credenciales de acceso con terceros.</li>
+      <li>Contactar con nuestro soporte antes de iniciar una disputa o contracargo ante su entidad bancaria.</li>
+    </ul>
+
+    <h3>10. Modificaciones</h3>
+    <p>IJMT VENTURES LLC puede actualizar estos Términos en cualquier momento. La versión aplicable a cada compra es la publicada en esta página en el momento de realizarla. Los cambios no afectan retroactivamente a compras ya efectuadas.</p>
+
+    <h3>11. Ley aplicable y contacto</h3>
+    <p>Estos Términos se rigen por las leyes del Estado de Wyoming, Estados Unidos de América, sin perjuicio de los derechos que la normativa de consumo del país de residencia del cliente le reconozca con carácter imperativo. Ante cualquier consulta, reclamo o para gestionar tu garantía, escribinos a <a href="mailto:nachitoomartinez7soporte@gmail.com">nachitoomartinez7soporte@gmail.com</a>.</p>
+  </div>
+</div>
+
+<!-- ══════════════════ 09 · PRIVACIDAD ══════════════════ -->
+<div class="tpl-sec tpl-legal" id="tpl-privacidad">
+  <div class="tpl-wrap">
+    <h2><span class="tpl-num">09</span>Política de Privacidad</h2>
+
+    <h3>Responsable del tratamiento</h3>
+    <p><strong>IJMT VENTURES LLC</strong>, con domicilio en 1057 NW 136th Ave, Miami, FL 33182, Estados Unidos, y correo de contacto <a href="mailto:nachitoomartinez7soporte@gmail.com">nachitoomartinez7soporte@gmail.com</a>.</p>
+
+    <h3>Qué datos recopilamos y para qué</h3>
+    <ul>
+      <li><strong>Nombre, email y teléfono:</strong> para procesar la compra, entregar el producto, emitir el comprobante y brindar soporte al cliente.</li>
+      <li><strong>Datos de pago:</strong> son procesados directamente por nuestros proveedores de pago (procesadores certificados PCI-DSS). <strong>No almacenamos números completos de tarjeta en nuestros servidores.</strong></li>
+      <li><strong>Datos de navegación y publicidad:</strong> utilizamos cookies y píxeles de terceros (por ejemplo, Meta y Google) para medir la efectividad de nuestras campañas publicitarias y mejorar nuestros sitios.</li>
+    </ul>
+
+    <h3>Con quién compartimos los datos</h3>
+    <p>Únicamente con los proveedores necesarios para prestar el servicio: procesadores de pago, plataformas de entrega de contenido, proveedores de email marketing y plataformas de publicidad. <strong>No vendemos ni cedemos datos personales a terceros con fines publicitarios ajenos a nuestra propia actividad.</strong></p>
+
+    <h3>Conservación</h3>
+    <p>Conservamos los datos mientras dure la relación comercial y durante los plazos legales de conservación fiscal y contable aplicables en Estados Unidos.</p>
+
+    <h3>Tus derechos</h3>
+    <p>Podés solicitar en cualquier momento el acceso, la rectificación, la eliminación de tus datos o la baja de nuestras comunicaciones comerciales escribiendo a <a href="mailto:nachitoomartinez7soporte@gmail.com">nachitoomartinez7soporte@gmail.com</a>. Respondemos toda solicitud dentro de los 30 días.</p>
+  </div>
+</div>
+
+<!-- ══════════════════ 10 · RESUMEN EN INGLÉS ══════════════════ -->
+<div class="tpl-sec tpl-legal" id="tpl-english">
+  <div class="tpl-wrap">
+    <h2><span class="tpl-num">10</span>Business summary (English)</h2>
+
+    <p><strong>Legal entity:</strong> IJMT VENTURES LLC — Limited Liability Company (LLC), Wyoming, Estados Unidos.<br>
+    <strong>Business address:</strong> 1057 NW 136th Ave, Miami, FL 33182, Estados Unidos.<br>
+    <strong>Account representative / owner:</strong> Ignacio Martínez Tejera, Founder and Director.<br>
+    <strong>Website:</strong> ijmtventures.com · <strong>Support email:</strong> nachitoomartinez7soporte@gmail.com<br>
+    <strong>Support phone:</strong> +598 94 823 581 · <strong>WhatsApp:</strong> +598 94 823 581<br>
+    <strong>Statement descriptor:</strong> AROMA QUEEN</p>
+
+    <p><strong>What we sell.</strong> IJMT VENTURES LLC sells <strong>downloadable digital products only</strong> — courses, PDF manuals, resource libraries and editable templates on home fragrance, candle and artisan soap making. Price: US$ 14, one-time payment, lifetime access. <strong>We do not sell or ship any physical goods, and we do not provide consulting or any personalised service.</strong> Sold at resetdiario.com.</p>
+
+    <p><strong>Billing model.</strong> One-time payments only. <strong>No subscriptions, no recurring billing, no free trials that convert into charges and no automatic renewals.</strong> The full amount is disclosed to the customer before checkout.</p>
+
+    <p><strong>Delivery.</strong> Digital delivery by email, immediate — typically within 5 minutes of payment. No shipping costs, no physical shipments, no customs, no delivery delays.</p>
+
+    <p><strong>Refunds and cancellations.</strong> A <strong>30-day money-back guarantee applies to every product we sell</strong>, with a 100% refund and no questions asked. Requests are made by email to nachitoomartinez7soporte@gmail.com or via WhatsApp, acknowledged within 24 business hours and refunded to the original payment method within 5 business days. Since we sell no subscriptions, customers have nothing to cancel to avoid future charges. No physical returns apply.</p>
+
+    <p><strong>Customer support.</strong> Email nachitoomartinez7soporte@gmail.com, phone +598 94 823 581 and WhatsApp +598 94 823 581, Monday to Friday, 9:00 to 18:00 (GMT-3). First response within 24 business hours. Support is provided in Spanish.</p>
+  </div>
+</div>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<div class="tpl-footer">
+  <div class="tpl-wrap">
+    <div class="tpl-fgrid">
+      <div>
+        <b>IJMT VENTURES LLC</b>
+        Venta de productos digitales.<br>
+        1057 NW 136th Ave<br>
+        Miami, FL 33182<br>
+        Estados Unidos<br><br>
+        Representante: Ignacio Martínez Tejera
+      </div>
+      <div>
+        <b>Atención al cliente</b>
+        <a href="mailto:nachitoomartinez7soporte@gmail.com">nachitoomartinez7soporte@gmail.com</a><br>
+        <a href="tel:+59894823581">+598 94 823 581</a><br>
+        <a href="https://api.whatsapp.com/send/?phone=59894823581" target="_blank" rel="noopener">WhatsApp +598 94 823 581</a><br>
+        Lunes a viernes, de 9:00 a 18:00 (GMT-3)
+      </div>
+      <div>
+        <b>Políticas</b>
+        <a href="#tpl-reembolsos">Reembolsos y cancelaciones</a><br>
+        <a href="#tpl-entrega">Entrega y envíos</a><br>
+        <a href="#tpl-terminos">Términos y Condiciones</a><br>
+        <a href="#tpl-privacidad">Política de Privacidad</a><br>
+        <a href="#tpl-soporte">Contactar soporte</a>
+      </div>
+      <div>
+        <b>Nuestros sitios</b>
+        <a href="https://ijmtventures.com" target="_blank" rel="noopener">ijmtventures.com</a> — sitio oficial de la empresa<br>
+        <a href="https://resetdiario.com" target="_blank" rel="noopener">resetdiario.com</a> — tienda online<br>
+      </div>
+    </div>
+    <div class="tpl-copy">
+      © 2026 IJMT VENTURES LLC. Todos los derechos reservados.<br>
+      Todos nuestros productos son digitales. No comercializamos productos físicos. No operamos suscripciones ni cobros recurrentes.<br>
+      Los cargos figuran en tu extracto bancario como <strong>AROMA QUEEN</strong>.
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ BOTÓN FLOTANTE DE SOPORTE ══════════════════ -->
+<div class="tpl-float">
+  <a class="tpl-fbtn tpl-wa" href="https://api.whatsapp.com/send/?phone=59894823581" target="_blank" rel="noopener" aria-label="Contactar soporte por WhatsApp">💬 <span>Soporte por WhatsApp</span></a>
+  <a class="tpl-fbtn" href="mailto:nachitoomartinez7soporte@gmail.com?subject=Consulta%20de%20soporte" aria-label="Contactar soporte por email">✉ <span>Soporte por email</span></a>
+</div>
+
+</div><!-- /.tpl -->
+
+</body>
+</html>
